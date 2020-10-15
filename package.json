@@ -1,7 +1,7 @@
 {
-  "name": "gm",
+  "name": "@ovos-media/gm",
   "description": "GraphicsMagick and ImageMagick for node.js",
-  "version": "1.23.1",
+  "version": "2.0.1",
   "author": "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
   "keywords": [
     "graphics",
