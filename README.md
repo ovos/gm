@@ -31,8 +31,11 @@ or clone the repo:
 Subclass `gm` to enable ImageMagick
 
 ```js
-var fs = require('fs')
-  , gm = require('gm').subClass({imageMagick: true});
+var fs = require('fs');
+// use Imagemagick pre-v7 CLI syntax (individual commands, incompatible with windows)
+var gm = require('gm').subClass({imageMagick: true});
+// OR use Imagemagick v7+ CLI syntax (`magick` command)
+var gm = require('gm').subClass({imageMagick: '7+'});
 
 // resize and remove EXIF profile data
 gm('/path/to/my/img.jpg')
